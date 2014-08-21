@@ -1,0 +1,35 @@
+Initialize engine version: 4.1.2f1 (911c7369eeac)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.1172]
+    Renderer: ATI Radeon HD 5700 Series
+    Vendor:   ATI
+    VRAM:     1016 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 DF24=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Noah\Documents\New Unity Project\TestBuilds\TestBuild2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Noah\Documents\New Unity Project\TestBuilds\TestBuild2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Noah\Documents\New Unity Project\TestBuilds\TestBuild2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Noah\Documents\New Unity Project\TestBuilds\TestBuild2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.060 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1606)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 149.
+Total: 2.097385 ms (FindLiveObjects: 0.016041 ms CreateObjectMapping: 0.085309 ms MarkObjects: 1.117414 ms  DeleteObjects: 0.009843 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1606)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 86.
+Total: 3.362087 ms (FindLiveObjects: 0.010572 ms CreateObjectMapping: 0.022238 ms MarkObjects: 2.399615 ms  DeleteObjects: 0.111194 ms)
+

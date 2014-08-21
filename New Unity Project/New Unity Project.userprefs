@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Gravity\Try4.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Gravity\RigidbodyCharacterController.cs" Line="39" Column="46" />
+      <File FileName="Assets\Scripts\Gravity\PlayerControllerCube.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HealthController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Gravity\Try4.cs" Line="65" Column="46" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
