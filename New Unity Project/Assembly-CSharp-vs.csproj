@@ -49,6 +49,10 @@
      <Compile Include="Assets\Scripts\Bla.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\FauxGravity\DirectionIndicatorScript.cs" />
+     <Compile Include="Assets\Scripts\FauxGravity\FauxGravityAttractor.cs" />
+     <Compile Include="Assets\Scripts\FauxGravity\FauxGravityBody.cs" />
+     <Compile Include="Assets\Scripts\FauxGravity\PlayerControllerFauxGravity.cs" />
      <Compile Include="Assets\Scripts\Gravity\PlayerControllerCube.cs" />
      <Compile Include="Assets\Scripts\Gravity\PlayerControllerSphere.cs" />
      <Compile Include="Assets\Scripts\Gravity\RigidbodyCharacterController.cs" />
