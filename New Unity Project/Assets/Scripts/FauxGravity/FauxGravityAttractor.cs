@@ -7,6 +7,7 @@ public class FauxGravityAttractor : MonoBehaviour {
 
 	public void Attract(Transform body) 
 	{
+		// aus: https://www.youtube.com/watch?v=gHeQ8Hr92P4)
 		Vector3 gravityUp = (body.position - transform.position).normalized;
 		Vector3 localUp = body.up;
 

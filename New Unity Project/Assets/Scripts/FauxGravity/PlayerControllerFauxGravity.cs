@@ -25,7 +25,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical")).normalized;
 
 
-		//**************************************************************************************** isGrounded update:
+		//**************************************************************************************** isGrounded update: (teils aus: http://answers.unity3d.com/questions/155907/basic-movement-walking-on-walls.html)
 		Ray ray;
 		RaycastHit hit;
 		ray = new Ray(myTransform.position, -myTransform.position); // direction of ray
@@ -66,7 +66,8 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		}
 		else
 		{
-			rigidbody.MovePosition(myTransform.position + transform.TransformDirection(moveDirection) * moveSpeed * Time.deltaTime);
+			// aus: https://www.youtube.com/watch?v=gHeQ8Hr92P4)
+			rigidbody.MovePosition(myTransform.position + transform.TransformDirection(moveDirection) * moveSpeed * Time.deltaTime); //problem mit local moveDirection (drehen) anscheinend nicht mit local moveDirection sondern mit dem Attractor ein problem
 		}
 
 		if (jump)
