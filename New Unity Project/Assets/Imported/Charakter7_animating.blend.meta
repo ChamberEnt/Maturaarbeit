@@ -1,0 +1,729 @@
+fileFormatVersion: 2
+guid: b9a43a8bf23c24d1db7dde1579a28cb3
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: ArmatureCharakter
+    100002: //RootNode
+    100004: Charakter_lowpoly
+    100006: chest
+    100008: ctrl_base
+    100010: ctrl_fingers
+    100012: ctrl_foot
+    100014: ctrl_hand
+    100016: ctrl_head
+    100018: ctrl_jigglers
+    100020: ctrl_root
+    100022: ctrl_shoulder
+    100024: ctrl_spine
+    100026: ctrl_target
+    100028: ctrl_thumb
+    100030: Cube
+    100032: Cube_001
+    100034: Cube_002
+    100036: fingers_L
+    100038: fingers_R
+    100040: foot_L
+    100042: foot_R
+    100044: hand_L
+    100046: hand_R
+    100048: head
+    100050: hips
+    100052: jiggler_chest__unused_
+    100054: jiggler_stomach
+    100056: Lampe
+    100058: Lampe_001
+    100060: Lampe_002
+    100062: lowerArm_L
+    100064: lowerArm_R
+    100066: lowerLeg_L
+    100068: lowerLeg_R
+    100070: neck
+    100072: Plane
+    100074: Plane_001
+    100076: root
+    100078: shoulder_L
+    100080: shoulder_R
+    100082: stomach
+    100084: thumb_L
+    100086: thumb_R
+    100088: toes_L
+    100090: toes_R
+    100092: upperArm_L
+    100094: upperArm_R
+    100096: upperLeg_L
+    100098: upperLeg_R
+    400000: ArmatureCharakter
+    400002: //RootNode
+    400004: Charakter_lowpoly
+    400006: chest
+    400008: ctrl_base
+    400010: ctrl_fingers
+    400012: ctrl_foot
+    400014: ctrl_hand
+    400016: ctrl_head
+    400018: ctrl_jigglers
+    400020: ctrl_root
+    400022: ctrl_shoulder
+    400024: ctrl_spine
+    400026: ctrl_target
+    400028: ctrl_thumb
+    400030: Cube
+    400032: Cube_001
+    400034: Cube_002
+    400036: fingers_L
+    400038: fingers_R
+    400040: foot_L
+    400042: foot_R
+    400044: hand_L
+    400046: hand_R
+    400048: head
+    400050: hips
+    400052: jiggler_chest__unused_
+    400054: jiggler_stomach
+    400056: Lampe
+    400058: Lampe_001
+    400060: Lampe_002
+    400062: lowerArm_L
+    400064: lowerArm_R
+    400066: lowerLeg_L
+    400068: lowerLeg_R
+    400070: neck
+    400072: Plane
+    400074: Plane_001
+    400076: root
+    400078: shoulder_L
+    400080: shoulder_R
+    400082: stomach
+    400084: thumb_L
+    400086: thumb_R
+    400088: toes_L
+    400090: toes_R
+    400092: upperArm_L
+    400094: upperArm_R
+    400096: upperLeg_L
+    400098: upperLeg_R
+    2300000: ctrl_base
+    2300002: ctrl_fingers
+    2300004: ctrl_foot
+    2300006: ctrl_hand
+    2300008: ctrl_head
+    2300010: ctrl_jigglers
+    2300012: ctrl_root
+    2300014: ctrl_shoulder
+    2300016: ctrl_spine
+    2300018: ctrl_target
+    2300020: ctrl_thumb
+    2300022: Cube
+    2300024: Cube_001
+    2300026: Cube_002
+    2300028: Lampe
+    2300030: Lampe_001
+    2300032: Lampe_002
+    2300034: Plane
+    2300036: Plane_001
+    3300000: ctrl_base
+    3300002: ctrl_fingers
+    3300004: ctrl_foot
+    3300006: ctrl_hand
+    3300008: ctrl_head
+    3300010: ctrl_jigglers
+    3300012: ctrl_root
+    3300014: ctrl_shoulder
+    3300016: ctrl_spine
+    3300018: ctrl_target
+    3300020: ctrl_thumb
+    3300022: Cube
+    3300024: Cube_001
+    3300026: Cube_002
+    3300028: Lampe
+    3300030: Lampe_001
+    3300032: Lampe_002
+    3300034: Plane
+    3300036: Plane_001
+    4300000: Charakter_lowpoly
+    4300002: Cube_002
+    4300004: Cube_001
+    4300006: Plane_001
+    4300008: Cube
+    4300010: ctrl_thumb
+    4300012: ctrl_head
+    4300014: ctrl_fingers
+    4300016: ctrl_spine
+    4300018: ctrl_jigglers
+    4300020: ctrl_shoulder
+    4300022: ctrl_base
+    4300024: ctrl_target
+    4300026: ctrl_foot
+    4300028: ctrl_hand
+    4300030: ctrl_root
+    4300032: Lampe_002
+    4300034: Plane
+    4300036: Lampe_001
+    4300038: Lampe
+    7400000: Default Take
+    7400002: Charakter
+    7400004: idle1
+    7400006: walk1
+    7400008: walk2
+    7400010: walk3
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Charakter_lowpoly
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureCharakter
+        weight: 1
+      - path: ArmatureCharakter/root
+        weight: 1
+      - path: ArmatureCharakter/root/hips
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/jiggler_chest__unused_
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/neck
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/neck/head
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L/fingers_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L/thumb_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R/fingers_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R/thumb_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/jiggler_stomach
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L/foot_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L/foot_L/toes_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R/foot_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R/foot_R/toes_R
+        weight: 1
+      - path: Charakter_lowpoly
+        weight: 1
+      - path: ctrl_base
+        weight: 1
+      - path: ctrl_fingers
+        weight: 1
+      - path: ctrl_foot
+        weight: 1
+      - path: ctrl_hand
+        weight: 1
+      - path: ctrl_head
+        weight: 1
+      - path: ctrl_jigglers
+        weight: 1
+      - path: ctrl_root
+        weight: 1
+      - path: ctrl_shoulder
+        weight: 1
+      - path: ctrl_spine
+        weight: 1
+      - path: ctrl_target
+        weight: 1
+      - path: ctrl_thumb
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Lampe
+        weight: 1
+      - path: Lampe_001
+        weight: 1
+      - path: Lampe_002
+        weight: 1
+      - path: Plane
+        weight: 1
+      - path: Plane_001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Charakter
+      takeName: Charakter
+      firstFrame: 0
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureCharakter
+        weight: 1
+      - path: ArmatureCharakter/root
+        weight: 1
+      - path: ArmatureCharakter/root/hips
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/jiggler_chest__unused_
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/neck
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/neck/head
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L/fingers_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L/thumb_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R/fingers_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R/thumb_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/jiggler_stomach
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L/foot_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L/foot_L/toes_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R/foot_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R/foot_R/toes_R
+        weight: 1
+      - path: Charakter_lowpoly
+        weight: 1
+      - path: ctrl_base
+        weight: 1
+      - path: ctrl_fingers
+        weight: 1
+      - path: ctrl_foot
+        weight: 1
+      - path: ctrl_hand
+        weight: 1
+      - path: ctrl_head
+        weight: 1
+      - path: ctrl_jigglers
+        weight: 1
+      - path: ctrl_root
+        weight: 1
+      - path: ctrl_shoulder
+        weight: 1
+      - path: ctrl_spine
+        weight: 1
+      - path: ctrl_target
+        weight: 1
+      - path: ctrl_thumb
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Lampe
+        weight: 1
+      - path: Lampe_001
+        weight: 1
+      - path: Lampe_002
+        weight: 1
+      - path: Plane
+        weight: 1
+      - path: Plane_001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle1
+      takeName: idle1
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureCharakter
+        weight: 1
+      - path: ArmatureCharakter/root
+        weight: 1
+      - path: ArmatureCharakter/root/hips
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/jiggler_chest__unused_
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/neck
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/neck/head
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L/fingers_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L/thumb_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R/fingers_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R/thumb_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/jiggler_stomach
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L/foot_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L/foot_L/toes_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R/foot_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R/foot_R/toes_R
+        weight: 1
+      - path: Charakter_lowpoly
+        weight: 1
+      - path: ctrl_base
+        weight: 1
+      - path: ctrl_fingers
+        weight: 1
+      - path: ctrl_foot
+        weight: 1
+      - path: ctrl_hand
+        weight: 1
+      - path: ctrl_head
+        weight: 1
+      - path: ctrl_jigglers
+        weight: 1
+      - path: ctrl_root
+        weight: 1
+      - path: ctrl_shoulder
+        weight: 1
+      - path: ctrl_spine
+        weight: 1
+      - path: ctrl_target
+        weight: 1
+      - path: ctrl_thumb
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Lampe
+        weight: 1
+      - path: Lampe_001
+        weight: 1
+      - path: Lampe_002
+        weight: 1
+      - path: Plane
+        weight: 1
+      - path: Plane_001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk3
+      takeName: walk3
+      firstFrame: -1
+      lastFrame: 40
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureCharakter
+        weight: 1
+      - path: ArmatureCharakter/root
+        weight: 1
+      - path: ArmatureCharakter/root/hips
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/jiggler_chest__unused_
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/neck
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/neck/head
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L/fingers_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L/thumb_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R/fingers_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R/thumb_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/stomach/jiggler_stomach
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L/foot_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L/foot_L/toes_L
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R/foot_R
+        weight: 1
+      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R/foot_R/toes_R
+        weight: 1
+      - path: Charakter_lowpoly
+        weight: 1
+      - path: ctrl_base
+        weight: 1
+      - path: ctrl_fingers
+        weight: 1
+      - path: ctrl_foot
+        weight: 1
+      - path: ctrl_hand
+        weight: 1
+      - path: ctrl_head
+        weight: 1
+      - path: ctrl_jigglers
+        weight: 1
+      - path: ctrl_root
+        weight: 1
+      - path: ctrl_shoulder
+        weight: 1
+      - path: ctrl_spine
+        weight: 1
+      - path: ctrl_target
+        weight: 1
+      - path: ctrl_thumb
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Lampe
+        weight: 1
+      - path: Lampe_001
+        weight: 1
+      - path: Lampe_002
+        weight: 1
+      - path: Plane
+        weight: 1
+      - path: Plane_001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: ctrl_root
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
