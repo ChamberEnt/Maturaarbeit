@@ -2,15 +2,12 @@
 using System.Collections;
 
 public class AnimationDirection : MonoBehaviour {
+	
+	private float degreesRotated = 0;
+	private float degreesToRotate = 0;
 
-	private Vector3 facingDirection;
-	Transform Direction;
-
-	Vector3 lookAt;
 	// Use this for initialization
 	void Start () {
-		facingDirection = new Vector3(0,0,1);
-		Direction = GameObject.Find("DirectionIndicator").transform;
 	}
 	
 	// Update is called once per frame
@@ -18,15 +15,51 @@ public class AnimationDirection : MonoBehaviour {
 
 		if (PlayerControllerFauxGravity.moveDirection != Vector3.zero)
 		{
-			//Quaternion targetRotation = Quaternion.FromToRotation(facingDirection,PlayerControllerFauxGravity.moveDirection);
-			//transform.localRotation = Quaternion.Slerp(transform.rotation,targetRotation, 50f * Time.deltaTime );
-			//facingDirection = PlayerControllerFauxGravity.moveDirection;
-			//Debug.Log ("lR: "+transform.localRotation);
-			//Quaternion targetRotation = Quaternion.LookRotation(facingDirection, transform.position);
-			//Debug.Log ("fD, t.p: "+facingDirection+", "+transform.position);
-			//transform.rotation = Quaternion.Slerp(transform.rotation,targetRotation, 50f * Time.deltaTime );
+			if (Input.GetAxisRaw("Horizontal") == 1)
+			{
+				degreesToRotate = 270;
+			}
+			else if (Input.GetAxisRaw("Horizontal") == -1)
+			{
+				degreesToRotate = 90;
+			}
 
-			transform.LookAt(Direction);
+			if (Input.GetAxisRaw("Vertical") == 1)
+			{
+				if (degreesToRotate == 0)
+				{
+					degreesToRotate = 360;
+				}
+				else if (degreesToRotate == 90)
+				{
+					degreesToRotate = 45;
+				}
+				else if (degreesToRotate == 270)
+				{
+					degreesToRotate = 315;
+				}
+			}
+			else if (Input.GetAxisRaw("Vertical") == -1)
+			{
+				if (degreesToRotate == 0)
+				{
+					degreesToRotate = 180;
+				}
+				else if (degreesToRotate == 90)
+				{
+					degreesToRotate = 135;
+				}
+				else if (degreesToRotate == 270)
+				{
+					degreesToRotate = 225;
+				}
+			}
+
+			transform.RotateAround(transform.position, transform.position, degreesRotated - degreesToRotate);
+
+			degreesRotated = degreesToRotate;
+			degreesToRotate = 0;
+
 		}
 	}
 }
