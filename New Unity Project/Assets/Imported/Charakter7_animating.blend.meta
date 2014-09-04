@@ -178,6 +178,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -189,7 +190,7 @@ ModelImporter:
       name: Default Take
       takeName: Default Take
       firstFrame: 0
-      lastFrame: 55
+      lastFrame: 319
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -441,7 +442,7 @@ ModelImporter:
       name: idle1
       takeName: idle1
       firstFrame: 0
-      lastFrame: 50
+      lastFrame: 320
       wrapMode: 2
       orientationOffsetY: 0
       level: 0
@@ -722,7 +723,7 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: ctrl_root
+    rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
   additionalBone: 0
