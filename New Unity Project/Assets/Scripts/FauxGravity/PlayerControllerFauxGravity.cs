@@ -6,7 +6,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 	private float moveSpeed = 15;
 	public static Vector3 moveDirection;
 	private Transform myTransform;
-	private float charHeight = 1.1f;
+	private float charHeight = 0;
 	public static bool isGrounded;
 	private bool doubleJump = false;
 	private bool jump = false;
@@ -55,7 +55,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 				jump = true;
 			}
 		}
-		//Debug.Log ("myTransform.position: "+myTransform.position);
+		//Debug.Log ("isGrounded: "+isGrounded);
 	}
 
 	void FixedUpdate() {
