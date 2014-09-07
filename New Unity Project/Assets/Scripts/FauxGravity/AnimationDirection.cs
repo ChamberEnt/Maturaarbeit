@@ -1,13 +1,15 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class AnimationDirection : MonoBehaviour {
 	
 	private float degreesRotated = 0;
 	private float degreesToRotate = 0;
+	private Transform myTransform;
 
 	// Use this for initialization
 	void Start () {
+		//myTransform = transform;
 	}
 	
 	// Update is called once per frame
