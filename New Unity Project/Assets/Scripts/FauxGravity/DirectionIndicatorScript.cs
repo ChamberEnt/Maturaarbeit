@@ -13,7 +13,7 @@ public class DirectionIndicatorScript : MonoBehaviour {
 		if (PlayerControllerFauxGravity.moveDirection != Vector3.zero)
 		{
 			transform.localPosition = PlayerControllerFauxGravity.moveDirection * 10 - offset;
-			if (PlayerControllerFauxGravity.moveDirection != transform.localPosition)
+			//if (PlayerControllerFauxGravity.moveDirection != transform.localPosition)
 			{	
 				/*
 				switch (switchExpression)
