@@ -3,15 +3,16 @@ using System.Collections;
 
 public class PlayerControllerFauxGravity : MonoBehaviour {
 
-	private float moveSpeed = 15;
+	private float moveSpeed = 1;
 	public static Vector3 moveDirection;
 	private Transform myTransform;
 	public float charHeight = 0;
 	public static bool isGrounded;
 	private bool doubleJump = false;
 	private bool jump = false;
-	private float jumpPower = 250;
+	private float jumpPower = 200;
 	public static bool jumping = false;
+	public static bool walking = false;
 
 	void Start () {
 		myTransform = transform;
@@ -24,6 +25,14 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		//**************************************************************************************** moveDirection update (input):
 
 		moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical")).normalized;
+		if (moveDirection == Vector3.zero)
+		{
+			walking = false;
+		}
+		else 
+		{
+			walking = true;
+		}
 
 
 		//**************************************************************************************** isGrounded update: (teils aus: http://answers.unity3d.com/questions/155907/basic-movement-walking-on-walls.html)
@@ -75,8 +84,8 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		{
 			rigidbody.AddForce(myTransform.position.normalized * jumpPower );
 			//jumping = true;
-			jump = false;
-			//StartCoroutine(JumpTimer());
+			//jump = false;
+			StartCoroutine(JumpTimer());
 		}
 
 	}
@@ -84,7 +93,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 	IEnumerator JumpTimer()
 	{
 		yield return new WaitForSeconds (1);
-		jumping = false;
+		jump = false;
 	}
 	Vector3 returnMoveDirection()
 	{
