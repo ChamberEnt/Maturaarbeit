@@ -567,7 +567,7 @@ ModelImporter:
     - serializedVersion: 16
       name: walk3
       takeName: walk3
-      firstFrame: -1
+      firstFrame: 1
       lastFrame: 40
       wrapMode: 2
       orientationOffsetY: 0
