@@ -568,7 +568,7 @@ ModelImporter:
       name: walk3
       takeName: walk3
       firstFrame: 1
-      lastFrame: 40
+      lastFrame: 25
       wrapMode: 2
       orientationOffsetY: 0
       level: 0
