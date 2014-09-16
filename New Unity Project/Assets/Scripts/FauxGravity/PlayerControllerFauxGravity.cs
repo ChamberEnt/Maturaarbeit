@@ -83,7 +83,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 			rigidbody.MovePosition(myTransform.position + transform.TransformDirection(moveDirection) * moveSpeed * Time.deltaTime); //problem mit local moveDirection (drehen) anscheinend nicht mit local moveDirection sondern mit dem Attractor ein problem
 		}
 
-		if (jump)
+		if (jump && myTransform.rigidbody.velocity.magnitude <= 10)
 		{
 			rigidbody.AddForce(myTransform.position.normalized * jumpPower );
 			//jumping = true;
