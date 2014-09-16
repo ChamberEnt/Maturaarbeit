@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerControllerFauxGravity : MonoBehaviour {
 
-	private float moveSpeed = 1;
+	public float moveSpeed;
 	public static Vector3 moveDirection;
 	private Transform myTransform;
 	public float charHeight = 0;

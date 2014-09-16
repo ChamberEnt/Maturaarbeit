@@ -5,7 +5,7 @@ public class AnimationDirection : MonoBehaviour {
 	
 	private float degreesRotated = 0;
 	private float degreesToRotate = 0;
-	private float turnSpeed = 15;
+	public float turnSpeed;
 	private Vector3 myPos;
 	//new Transform myTrans;
 
