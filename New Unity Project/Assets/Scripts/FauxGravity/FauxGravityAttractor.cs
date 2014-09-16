@@ -11,7 +11,7 @@ public class FauxGravityAttractor : MonoBehaviour {
 		Vector3 gravityUp = (body.position - transform.position).normalized;
 		Vector3 localUp = body.up;
 
-		if (!PlayerControllerFauxGravity.isGrounded && !PlayerControllerFauxGravity.jumping)
+		if (!PlayerControllerFauxGravity.isGrounded)
 		{
 			body.rigidbody.AddForce(gravityUp * gravity);
 		}
