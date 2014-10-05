@@ -13,7 +13,7 @@ public class Try4 : MonoBehaviour {
 	float speedMax = 20f;
 
 	Vector3 myNormal; //character standing in that direction
-	Vector3 surfaceNormal; //surface facing in that direction
+	//Vector3 surfaceNormal; //surface facing in that direction
 	Vector3 myForward = Vector3.zero;
 
 	Vector3 xDirection;

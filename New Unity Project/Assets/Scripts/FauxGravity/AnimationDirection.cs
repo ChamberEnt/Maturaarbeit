@@ -84,7 +84,7 @@ public class AnimationDirection : MonoBehaviour {
 			{
 				transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation, turnSpeed * Time.deltaTime );
 			}
-			Debug.Log(""+transform.localRotation);
+			//Debug.Log(""+transform.localRotation);
 
 			/*
 			//funktioniert, aber keine Drehzeit, sieht abgehackt aus...
@@ -115,6 +115,13 @@ public class AnimationDirection : MonoBehaviour {
 
 			degreesRotated = degreesToRotate;
 			degreesToRotate = 0;
+
+			/*
+			if (PlayerControllerFauxGravity.returnRun())
+			{
+				transform.RotateAround(transform.position, transform.TransformDirection(new Vector3(0,1,0)), 180*Time.deltaTime);
+			}
+			*/
 
 		}
 	}

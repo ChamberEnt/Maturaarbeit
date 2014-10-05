@@ -15,6 +15,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 	public static bool walking = false;
 	private Vector3 groundLevel;
 	public float jumpHeight;
+	//private static bool run;
 
 	void Start () {
 		myTransform = transform;
@@ -22,7 +23,16 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 
 
 	void Update() {
-
+		/*
+		if (Input.GetKeyDown(KeyCode.LeftShift))
+		{
+			run = true;
+		}
+		else
+		{
+			run = false;
+		}
+		*/
 
 		//**************************************************************************************** moveDirection update (input):
 
@@ -108,5 +118,10 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 	{
 		return moveDirection;
 	}
-	
+	/*
+	public static bool returnRun()
+	{
+		return run;
+	}
+	*/
 }
