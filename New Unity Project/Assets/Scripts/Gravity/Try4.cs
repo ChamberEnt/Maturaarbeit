@@ -85,7 +85,7 @@ public class Try4 : MonoBehaviour {
 		if (hit.distance <= characterHeight)
 		{
 			isGrounded = true;
-			surfaceNormal = hit.normal;
+			//surfaceNormal = hit.normal;
 		}
 		else
 		{
