@@ -1,14 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Gravity\Try4.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FauxGravity\PlayerControllerFauxGravity.cs">
     <Files>
-      <File FileName="Assets\Scripts\FauxGravity\PlayerControllerFauxGravity.cs" Line="128" Column="1" />
-      <File FileName="Assets\Scripts\FauxGravity\AnimationController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FauxGravity\AnimationDirection.cs" Line="129" Column="1" />
       <File FileName="Assets\Scripts\FauxGravity\FauxGravityBody.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FauxGravity\PlayerControllerFauxGravity.cs" Line="56" Column="5" />
+      <File FileName="Assets\Scripts\FauxGravity\AnimationController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FauxGravity\AnimationDirection.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FauxGravity\DirectionIndicatorScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FauxGravity\FauxGravityAttractor.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Gravity\Try4.cs" Line="134" Column="2" />
+      <File FileName="Assets\Scripts\Gravity\Try4.cs" Line="134" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

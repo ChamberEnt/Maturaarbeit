@@ -52,6 +52,10 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		RaycastHit hit;
 		ray = new Ray(myTransform.position, -myTransform.position); // direction of ray
 		Physics.Raycast(ray, out hit); // cast ray downwards
+
+		//Debug.Log ("hit.distance "+hit.distance);
+		Debug.DrawLine (transform.position, hit.point, Color.cyan);
+
 		if (hit.distance <= charHeight)
 		{
 			isGrounded = true;
@@ -79,6 +83,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 			}
 		}
 		//Debug.Log ("isGrounded: "+isGrounded);
+
 	}
 
 	void FixedUpdate() {
