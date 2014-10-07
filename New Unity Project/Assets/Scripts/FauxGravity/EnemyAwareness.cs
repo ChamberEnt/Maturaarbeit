@@ -16,18 +16,19 @@ public class EnemyAwareness : MonoBehaviour {
 	void Update () {
 		Debug.Log ("CanSeePlayer: "+CanSeePlayer());
 	}
-	protected bool CanSeePlayer()
+
+	bool CanSeePlayer()
 	{
 		GameObject Player = GameObject.Find("PositionIndicator");
 		RaycastHit hit;
 		Vector3 rayDirection = Player.transform.position - transform.position;
 
-		Vector3 localForward = transform.forward*5+transform.position;
+		Vector3 localForward = transform.forward*visibilityDistance+transform.position;
 		Debug.DrawLine(transform.position, localForward, Color.green);
 
 		if ((Vector3.Angle(rayDirection, transform.forward)) <= fieldOfViewDegrees * 0.5f)
 		{
-			// Detect if player is within the field of view
+
 			if (Physics.Raycast(transform.position, rayDirection, out hit, visibilityDistance))
 			{
 				Debug.DrawLine(transform.position, hit.point, Color.red, 1);
