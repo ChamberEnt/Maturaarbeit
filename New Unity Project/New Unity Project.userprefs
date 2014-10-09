@@ -1,15 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Gravity\PlayerControllerCube.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FauxGravity\EnemyMovement.cs">
     <Files>
-      <File FileName="Assets\Scripts\FauxGravity\EnemyAwareness.cs" Line="20" Column="2" />
-      <File FileName="Assets\Scripts\FauxGravity\PlayerControllerFauxGravity.cs" Line="56" Column="5" />
+      <File FileName="Assets\Scripts\FauxGravity\EnemyMovement.cs" Line="107" Column="5" />
+      <File FileName="Assets\Scripts\FauxGravity\AnimationController.cs" Line="7" Column="4" />
+      <File FileName="Assets\Scripts\FauxGravity\EnemyAwareness.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FauxGravity\PlayerControllerFauxGravity.cs" Line="94" Column="4" />
       <File FileName="Assets\Scripts\FauxGravity\FauxGravityBody.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FauxGravity\AnimationController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FauxGravity\AnimationDirection.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FauxGravity\DirectionIndicatorScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FauxGravity\FauxGravityAttractor.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Gravity\PlayerControllerCube.cs" Line="9" Column="2" />
+      <File FileName="Assets\Scripts\FauxGravity\FauxGravityAttractor.cs" Line="8" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

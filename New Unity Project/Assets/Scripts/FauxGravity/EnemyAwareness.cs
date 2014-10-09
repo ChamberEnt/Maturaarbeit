@@ -14,7 +14,10 @@ public class EnemyAwareness : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log ("CanSeePlayer: "+CanSeePlayer());
+		Vector3 localForward = transform.forward*visibilityDistance+transform.position;
+		Debug.DrawLine(transform.position, localForward, Color.green);
+		//Debug.Log ("CanSeePlayer: "+CanSeePlayer());
+		CanSeePlayer ();
 	}
 
 	bool CanSeePlayer()
@@ -23,15 +26,14 @@ public class EnemyAwareness : MonoBehaviour {
 		RaycastHit hit;
 		Vector3 rayDirection = Player.transform.position - transform.position;
 
-		Vector3 localForward = transform.forward*visibilityDistance+transform.position;
-		Debug.DrawLine(transform.position, localForward, Color.green);
+
 
 		if ((Vector3.Angle(rayDirection, transform.forward)) <= fieldOfViewDegrees * 0.5f)
 		{
 
 			if (Physics.Raycast(transform.position, rayDirection, out hit, visibilityDistance))
 			{
-				Debug.DrawLine(transform.position, hit.point, Color.red, 1);
+				Debug.DrawLine(transform.position, hit.point, Color.red);
 				return (hit.transform.CompareTag("Player"));
 			}
 		}

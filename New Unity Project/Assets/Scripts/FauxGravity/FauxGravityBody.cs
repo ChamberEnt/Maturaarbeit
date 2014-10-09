@@ -17,7 +17,7 @@ public class FauxGravityBody : MonoBehaviour {
 		//aus: https://www.youtube.com/watch?v=gHeQ8Hr92P4)
 		if (attractor)
 		{
-			attractor.Attract(myTransform);
+			attractor.Attract(myTransform, PlayerControllerFauxGravity.isGrounded);
 		}
 	}
 	

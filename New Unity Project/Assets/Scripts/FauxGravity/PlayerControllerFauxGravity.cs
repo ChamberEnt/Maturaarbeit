@@ -6,7 +6,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 	public float moveSpeed;
 	public static Vector3 moveDirection;
 	private Transform myTransform;
-	public float charHeight = 0;
+	public float deltaGround;
 	public static bool isGrounded;
 	private bool doubleJump = false;
 	private bool jump = false;
@@ -56,7 +56,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		//Debug.Log ("hit.distance "+hit.distance);
 		Debug.DrawLine (transform.position, hit.point, Color.cyan);
 
-		if (hit.distance <= charHeight)
+		if (hit.distance <= deltaGround)
 		{
 			isGrounded = true;
 		}
@@ -95,7 +95,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		else
 		{
 			// aus: https://www.youtube.com/watch?v=gHeQ8Hr92P4)
-			rigidbody.MovePosition(myTransform.position + transform.TransformDirection(moveDirection) * moveSpeed * Time.deltaTime); //problem mit local moveDirection (drehen) anscheinend nicht mit local moveDirection sondern mit dem Attractor ein problem
+			rigidbody.MovePosition(myTransform.position + transform.TransformDirection(moveDirection)*moveSpeed*Time.deltaTime); //problem mit local moveDirection (drehen) anscheinend nicht mit local moveDirection sondern mit dem Attractor ein problem
 		}
 
 		if (jump && myTransform.rigidbody.velocity.magnitude <= 10)
