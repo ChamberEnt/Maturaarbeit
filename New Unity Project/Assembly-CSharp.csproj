@@ -53,7 +53,9 @@
      <Compile Include="Assets\Scripts\FauxGravity\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\FauxGravityAttractor.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\FauxGravityBody.cs" />
+     <Compile Include="Assets\Scripts\FauxGravity\Menu.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\PlayerControllerFauxGravity.cs" />
+     <Compile Include="Assets\Scripts\MenuIntro.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,8 +4,8 @@ using System.Collections;
 [RequireComponent (typeof (Rigidbody))]
 public class FauxGravityBody : MonoBehaviour {
 
-	public FauxGravityAttractor attractor;
-	public static Transform myTransform;
+	public FauxGravityAttractor attractor; //Planet/Level
+	public static Transform myTransform; //Position + Rotation + Grösse
 
 	void Start () {
 		rigidbody.useGravity = false;

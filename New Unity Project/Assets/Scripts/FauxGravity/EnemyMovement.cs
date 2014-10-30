@@ -4,21 +4,21 @@ using System;
 
 public class EnemyMovement : MonoBehaviour {
 	
-	public bool startBool = false;
-	public float moveSpeed;
-	public float turnSpeed;
-	public FauxGravityAttractor attractor;
-	public static Transform myTransform;
-	private bool isGrounded;
-	private bool moving;
-	private bool turning;
-	private float[] walkingPath = new float[4];
-	private float[] turningPath = new float[4];
-	private int i = 0;
-	private Vector3 startPos;
-	private Quaternion startRot;
-	private Vector3 x;
-	private Quaternion y;
+	public static bool startBool; // um bewegung des Gegners zu starten auf true setzen
+	public float moveSpeed; //Bewegunsgeschwindigkeit
+	public float turnSpeed; //Drehgeschwindigkeit (in s/90Grad )
+	public FauxGravityAttractor attractor; //Planet/Level
+	public static Transform myTransform; //Position + Rotation + Grösse
+	private bool isGrounded; //ob das Objekt den Boden berührt
+	private bool moving; //ob das Objekt sich fortbewegt
+	private bool turning; //ob das Objekt sich dreht
+	private float[] walkingPath = new float[4]; //Liste mit den Laufdistanzen
+	private float[] turningPath = new float[4]; //Liste mit den Drehwinkeln
+	private int patroullienZaehler = 0; //Zähler um durch die oberen Listen zugehen
+	private Vector3 startPos; //Anfangsposition
+	private Quaternion startRot; //Anfangsrotation
+	private Vector3 oldPosition; //Position an der das letzte mahl gedreht wurde
+	private Quaternion oldRotation; //Rotation an der das erste mahl gelaufen wurde
 
 	/*
 	void Awake()
@@ -28,6 +28,7 @@ public class EnemyMovement : MonoBehaviour {
 	*/
 
 	void Start () {
+		startBool = false;
 		turning = false;
 		moving = false;
 
@@ -55,9 +56,10 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
 	void Update () {
-
+		/*
 		float abcd = 1.0f / Time.deltaTime;
 		Debug.Log (""+abcd);
+		*/
 
 		if (startBool)
 		{
@@ -104,11 +106,11 @@ public class EnemyMovement : MonoBehaviour {
 			rigidbody.angularVelocity = Vector3.zero;
 		}
 
-		//Debug.DrawLine(myTransform.position, myTransform.position + new Vector3(0 ,0.1f ,0), Color.black, 50);
+		Debug.DrawLine(myTransform.position, myTransform.position + new Vector3(0 ,0.1f ,0), Color.black, 50);
 
 		if (moving)
 		{
-			if (Vector3.SqrMagnitude(x-myTransform.position) <= (3.95f/2)*moveSpeed) //ACHTUNG 3.95f müssen angepasst werden!!! ist die distanz, irgendwie aus moceSpeed und walkTime (also walkingPath[i]) berechenen
+			if (Vector3.SqrMagnitude(oldPosition - myTransform.position) <= (3.95f/2)*moveSpeed) //ACHTUNG 3.95f müssen angepasst werden!!! ist die distanz, irgendwie aus moveSpeed und walkTime (also walkingPath[patroullienZaehler]) berechenen
 			{
 				rigidbody.MovePosition(myTransform.position + myTransform.forward.normalized * moveSpeed * Time.deltaTime);
 			}
@@ -116,11 +118,11 @@ public class EnemyMovement : MonoBehaviour {
 		
 		if (turning)
 		{
-			if(Quaternion.Angle(myTransform.rotation, y) < turningPath[i])
+			if(Quaternion.Angle(myTransform.rotation, oldRotation) < turningPath[patroullienZaehler])
 			{
-				if (turningPath[i] > 180)
+				if (turningPath[patroullienZaehler] > 180)
 				{
-					if(Quaternion.Angle(myTransform.rotation, y) <= 360 - turningPath[i])
+					if(Quaternion.Angle(myTransform.rotation, oldRotation) <= 360 - turningPath[patroullienZaehler])
 					{
 						transform.RotateAround(myTransform.position, -myTransform.position, turnSpeed * Time.deltaTime * 90f);
 						//Debug.Log (""+Quaternion.Angle(myTransform.rotation, y));
@@ -141,18 +143,18 @@ public class EnemyMovement : MonoBehaviour {
 	{
 		float angleTemp;
 		startBool = false;
-		x = myTransform.position;
+		oldPosition = myTransform.position;
 		moving = true;
 		yield return new WaitForSeconds(walkTime);
 		moving = false;
 
-		if(turningPath[i] > 180)
+		if(turningPath[patroullienZaehler] > 180)
 		{
-			angleTemp = 360-turningPath[i];
+			angleTemp = 360-turningPath[patroullienZaehler];
 		}
 		else
 		{
-			angleTemp = turningPath[i];
+			angleTemp = turningPath[patroullienZaehler];
 		}
 		StartCoroutine(TurnTimer (angleTemp));
 	}
@@ -160,19 +162,24 @@ public class EnemyMovement : MonoBehaviour {
 
 	IEnumerator TurnTimer(float angle)
 	{
-		y = myTransform.rotation;
+		oldRotation = myTransform.rotation;
 		turning = true;
 		yield return new WaitForSeconds(angle/(90f*turnSpeed));
 		turning = false;
-		i =  (i+1)%(walkingPath.Length);
+		patroullienZaehler =  (patroullienZaehler+1)%(walkingPath.Length);
 
-		if (i == 0)
+		if (patroullienZaehler == 0)
 		{
 			myTransform.position = startPos;
 			myTransform.rotation = startRot;
 		}
 
-		StartCoroutine(WalkTimer (walkingPath[i]));
+		StartCoroutine(WalkTimer (walkingPath[patroullienZaehler]));
+	}
+
+	public void SetStartBool(bool sB)
+	{
+		startBool = sB;
 	}
 	
 

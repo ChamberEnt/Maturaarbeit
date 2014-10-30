@@ -3,11 +3,14 @@ using System.Collections;
 
 public class PlayerControllerFauxGravity : MonoBehaviour {
 
-	public float moveSpeed;
-	public static Vector3 moveDirection;
-	private Transform myTransform;
-	public float deltaGround;
-	public static bool isGrounded;
+	public float moveSpeed; //Bewegungsgeschwindigkeit
+	public static Vector3 moveDirection; //Laufrichtung (vom Spieler aus gesehen, ohne Drehung)
+	private Transform myTransform; //Position + Rotation + Grösse
+	public float deltaGround; //Gibt an wie weit der abstand zwischen Boden und Objekt sein kann ohne das das Objekt nicht am Boden steht, wichtig bei schrägen Flächen
+	public static bool isGrounded; //ob das Objekt den Boden berührt
+
+	//Das ganze Junping sollte noch überarbeitet werden, wenn zeit besteht
+
 	private bool doubleJump = false;
 	private bool jump = false;
 	private float jumpPower = 200;
