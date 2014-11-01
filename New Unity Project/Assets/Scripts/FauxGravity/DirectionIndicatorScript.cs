@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class DirectionIndicatorScript : MonoBehaviour {
+
+	//Unwichtiges Script, könnte gelöscht werden
+
 	Vector3 offset = new Vector3(0,1,0);
 
 	void Start () {

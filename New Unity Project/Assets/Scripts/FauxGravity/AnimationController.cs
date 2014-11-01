@@ -3,12 +3,12 @@ using System.Collections;
 
 public class AnimationController : MonoBehaviour {
 
-	private AnimationState idle;
-	private AnimationState walk;
+	//private AnimationState idle;
+	//private AnimationState walk;
 
 	void Start () {
-		idle = animation["idle1"];
-		walk = animation["walk3"];
+		//idle = animation["idle1"];
+		//walk = animation["walk3"];
 
 		animation.wrapMode = WrapMode.Loop;
 

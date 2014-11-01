@@ -3,11 +3,14 @@ using System.Collections;
 
 public class PlayerControllerFauxGravity : MonoBehaviour {
 
-	public float moveSpeed;
-	public static Vector3 moveDirection;
-	private Transform myTransform;
-	public float charHeight = 0;
-	public static bool isGrounded;
+	public float moveSpeed; //Bewegungsgeschwindigkeit
+	public static Vector3 moveDirection; //Laufrichtung (vom Spieler aus gesehen, ohne Drehung)
+	private Transform myTransform; //Position + Rotation + Grösse
+	public float deltaGround; //Gibt an wie weit der abstand zwischen Boden und Objekt sein kann ohne das das Objekt nicht am Boden steht, wichtig bei schrägen Flächen
+	public static bool isGrounded; //ob das Objekt den Boden berührt
+
+	//Das ganze Junping sollte noch überarbeitet werden, wenn zeit besteht
+
 	private bool doubleJump = false;
 	private bool jump = false;
 	private float jumpPower = 200;
@@ -56,7 +59,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		//Debug.Log ("hit.distance "+hit.distance);
 		Debug.DrawLine (transform.position, hit.point, Color.cyan);
 
-		if (hit.distance <= charHeight)
+		if (hit.distance <= deltaGround)
 		{
 			isGrounded = true;
 		}
@@ -95,7 +98,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		else
 		{
 			// aus: https://www.youtube.com/watch?v=gHeQ8Hr92P4)
-			rigidbody.MovePosition(myTransform.position + transform.TransformDirection(moveDirection) * moveSpeed * Time.deltaTime); //problem mit local moveDirection (drehen) anscheinend nicht mit local moveDirection sondern mit dem Attractor ein problem
+			rigidbody.MovePosition(myTransform.position + transform.TransformDirection(moveDirection)*moveSpeed*Time.deltaTime); //problem mit local moveDirection (drehen) anscheinend nicht mit local moveDirection sondern mit dem Attractor ein problem
 		}
 
 		if (jump && myTransform.rigidbody.velocity.magnitude <= 10)

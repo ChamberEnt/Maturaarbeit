@@ -3,11 +3,11 @@ using System.Collections;
 
 public class AnimationDirection : MonoBehaviour {
 	
-	private float degreesRotated = 0;
-	private float degreesToRotate = 0;
-	public float turnSpeed;
-	private Vector3 myPos;
-	//new Transform myTrans;
+	//private float degreesRotated = 0;
+	private float degreesToRotate = 0; //Gibt an wo hin gedreht werden muss, immer vom Spieler aus aber ohne dessen eigene Drehung (um die eigene Achse) zu berücksichtigen
+	public float turnSpeed; //Drehgeschwindigkeit
+	private Vector3 myPos; //nur Position aus myTransform
+	//private Transform myTransform;
 
 	// Use this for initialization
 	void Start () {
@@ -77,7 +77,7 @@ public class AnimationDirection : MonoBehaviour {
 				}
 			}
 
-			float roateABCD = degreesRotated - degreesToRotate;
+			//float roateABCD = degreesRotated - degreesToRotate;
 			//Debug.Log(""+roateABCD);
 			// Quaternion targetRotation = new Quaternion(0, degreesRotated - degreesToRotate, 0, transform.localRotation.w);
 			if (targetRotation != transform.localRotation)
@@ -113,7 +113,7 @@ public class AnimationDirection : MonoBehaviour {
 			//myTransform.rotation = Quaternion.Slerp(myTransform.rotation, targetRotation, 25f * Time.deltaTime);
 
 
-			degreesRotated = degreesToRotate;
+			//degreesRotated = degreesToRotate;
 			degreesToRotate = 0;
 
 			/*
