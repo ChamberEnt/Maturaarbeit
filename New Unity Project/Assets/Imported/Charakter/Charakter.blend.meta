@@ -53,6 +53,7 @@ ModelImporter:
     100094: upperArm_R
     100096: upperLeg_L
     100098: upperLeg_R
+    100100: Plane_002
     400000: ArmatureCharakter
     400002: //RootNode
     400004: Charakter_lowpoly
@@ -103,6 +104,7 @@ ModelImporter:
     400094: upperArm_R
     400096: upperLeg_L
     400098: upperLeg_R
+    400100: Plane_002
     2300000: ctrl_base
     2300002: ctrl_fingers
     2300004: ctrl_foot
@@ -122,6 +124,7 @@ ModelImporter:
     2300032: Lampe_002
     2300034: Plane
     2300036: Plane_001
+    2300038: Plane_002
     3300000: ctrl_base
     3300002: ctrl_fingers
     3300004: ctrl_foot
@@ -141,6 +144,7 @@ ModelImporter:
     3300032: Lampe_002
     3300034: Plane
     3300036: Plane_001
+    3300038: Plane_002
     4300000: Charakter_lowpoly
     4300002: Cube_002
     4300004: Cube_001
@@ -161,12 +165,14 @@ ModelImporter:
     4300034: Plane
     4300036: Lampe_001
     4300038: Lampe
+    4300040: Plane_002
     7400000: Default Take
     7400002: Charakter
     7400004: idle1
     7400006: walk1
     7400008: walk2
     7400010: walk3
+    7400012: jump
     9500000: //RootNode
     13700000: Charakter_lowpoly
   materials:
