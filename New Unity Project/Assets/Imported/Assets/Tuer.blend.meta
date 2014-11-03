@@ -8,12 +8,22 @@ ModelImporter:
     100004: T_r
     100006: t_r
     100008: //RootNode
+    100010: Tuer_Rahmen
+    100012: Tuer_Tuer
     400000: a_T_r
     400002: root
     400004: T_r
     400006: t_r
     400008: //RootNode
+    400010: Tuer_Rahmen
+    400012: Tuer_Tuer
+    2300000: Tuer_Rahmen
+    2300002: Tuer_Tuer
+    3300000: Tuer_Rahmen
+    3300002: Tuer_Tuer
     4300000: T_r
+    4300002: Tuer_Rahmen
+    4300004: Tuer_Tuer
     7400000: Default Take
     9500000: //RootNode
     13700000: T_r
