@@ -56,7 +56,7 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		ray = new Ray(myTransform.position, -myTransform.position); // direction of ray
 		Physics.Raycast(ray, out hit); // cast ray downwards
 
-		//Debug.Log ("hit.distance "+hit.distance);
+		Debug.Log ("hit.distance "+hit.distance);
 		Debug.DrawLine (transform.position, hit.point, Color.cyan);
 
 		if (hit.distance <= deltaGround)
@@ -71,21 +71,21 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 
 		//********************************************************************************************* Jump update (input):
 
-		if (isGrounded)
-		{
-			doubleJump = false;
-		}
-		
-		if (Input.GetButtonDown("Jump"))
-		{
-			if (isGrounded || doubleJump)
-			{
-				doubleJump = !doubleJump;
-				jump = true;
-				groundLevel = myTransform.position;
-			}
-		}
-		//Debug.Log ("isGrounded: "+isGrounded);
+
+//		if (isGrounded)
+//		{
+//			doubleJump = false;
+//		}
+//		
+//		if (Input.GetButtonDown("Jump"))
+//		{
+//			if (isGrounded || doubleJump)
+//			{
+//				doubleJump = !doubleJump;
+//				jump = true;
+//				groundLevel = myTransform.position;
+//			}
+//		}
 
 	}
 

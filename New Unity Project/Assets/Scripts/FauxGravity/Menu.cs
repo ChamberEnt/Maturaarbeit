@@ -17,7 +17,7 @@ public class Menu : MonoBehaviour {
 
 	void OnGUI()
 	{
-		if (EnemyAwareness.CanSeePlayer())
+		if (false) //(EnemyAwareness.CanSeePlayer()) //kann nur funktionieren solange auch ein EnemyAwareness Script exisitiert ansonsten "null reference exeption"
 		{
 			GUI.Label(new Rect ((Screen.width - 160),10,150,50),"Seen by Enemy: true");
 		}

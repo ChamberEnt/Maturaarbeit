@@ -25,7 +25,7 @@ public class EnemyAwareness : MonoBehaviour {
 
 	public static bool CanSeePlayer()
 	{
-		GameObject Player = GameObject.Find("PositionIndicator");
+		GameObject Player = GameObject.Find("Player");
 		RaycastHit hit;
 		Vector3 rayDirection = Player.transform.position - myTransform.transform.position;
 
