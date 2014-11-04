@@ -173,6 +173,8 @@ ModelImporter:
     7400008: walk2
     7400010: walk3
     7400012: jump
+    7400014: jumpStart
+    7400016: jumpEnd
     9500000: //RootNode
     11100000: //RootNode
     13700000: Charakter_lowpoly
@@ -193,10 +195,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Default Take
-      takeName: Default Take
+      name: jumpStart
+      takeName: jumpStart
       firstFrame: 0
-      lastFrame: 39
+      lastFrame: 19
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -321,10 +323,10 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Charakter
-      takeName: Charakter
+      name: jumpEnd
+      takeName: jumpEnd
       firstFrame: 0
-      lastFrame: 6
+      lastFrame: 19
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -577,138 +579,10 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: jump
-      takeName: jump
-      firstFrame: 0
-      lastFrame: 49
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: ArmatureCharakter
-        weight: 1
-      - path: ArmatureCharakter/root
-        weight: 1
-      - path: ArmatureCharakter/root/hips
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/jiggler_chest__unused_
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/neck
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/neck/head
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L/fingers_L
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_L/upperArm_L/lowerArm_L/hand_L/thumb_L
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R/fingers_R
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/chest/shoulder_R/upperArm_R/lowerArm_R/hand_R/thumb_R
-        weight: 1
-      - path: ArmatureCharakter/root/hips/stomach/jiggler_stomach
-        weight: 1
-      - path: ArmatureCharakter/root/hips/upperLeg_L
-        weight: 1
-      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L
-        weight: 1
-      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L/foot_L
-        weight: 1
-      - path: ArmatureCharakter/root/hips/upperLeg_L/lowerLeg_L/foot_L/toes_L
-        weight: 1
-      - path: ArmatureCharakter/root/hips/upperLeg_R
-        weight: 1
-      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R
-        weight: 1
-      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R/foot_R
-        weight: 1
-      - path: ArmatureCharakter/root/hips/upperLeg_R/lowerLeg_R/foot_R/toes_R
-        weight: 1
-      - path: Charakter_lowpoly
-        weight: 1
-      - path: ctrl_base
-        weight: 1
-      - path: ctrl_fingers
-        weight: 1
-      - path: ctrl_foot
-        weight: 1
-      - path: ctrl_hand
-        weight: 1
-      - path: ctrl_head
-        weight: 1
-      - path: ctrl_jigglers
-        weight: 1
-      - path: ctrl_root
-        weight: 1
-      - path: ctrl_shoulder
-        weight: 1
-      - path: ctrl_spine
-        weight: 1
-      - path: ctrl_target
-        weight: 1
-      - path: ctrl_thumb
-        weight: 1
-      - path: Cube
-        weight: 1
-      - path: Cube_001
-        weight: 1
-      - path: Cube_002
-        weight: 1
-      - path: Lampe
-        weight: 1
-      - path: Lampe_001
-        weight: 1
-      - path: Lampe_002
-        weight: 1
-      - path: Plane
-        weight: 1
-      - path: Plane_001
-        weight: 1
-      - path: Plane_002
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
       name: walk3
       takeName: walk3
-      firstFrame: -1
-      lastFrame: 40
+      firstFrame: 1
+      lastFrame: 39
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
