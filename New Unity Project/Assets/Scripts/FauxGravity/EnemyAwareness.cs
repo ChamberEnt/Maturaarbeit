@@ -11,15 +11,15 @@ public class EnemyAwareness : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		myTransform = transform;
-		fieldOfViewDegrees = 90;
-		visibilityDistance = 7;
+		fieldOfViewDegrees = 58;
+		visibilityDistance = 4.15f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		Vector3 localForward = transform.forward*visibilityDistance+transform.position;
 		Debug.DrawLine(transform.position, localForward, Color.green);
-		Debug.Log ("CanSeePlayer: "+CanSeePlayer());
+		//Debug.Log ("CanSeePlayer: "+CanSeePlayer());
 		CanSeePlayer ();
 	}
 

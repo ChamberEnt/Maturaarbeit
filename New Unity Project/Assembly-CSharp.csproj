@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\FauxGravity\AnimationController.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\AnimationDirection.cs" />
+     <Compile Include="Assets\Scripts\FauxGravity\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\DirectionIndicatorScript.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\EnemyAwareness.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\EnemyMovement.cs" />
