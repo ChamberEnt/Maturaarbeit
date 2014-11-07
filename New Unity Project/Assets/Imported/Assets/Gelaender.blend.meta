@@ -11,6 +11,9 @@ ModelImporter:
     100010: Gel_Ku_innen_001
     100012: Gel_Mitte_001
     100014: gW2_Treppe
+    100016: Gel_Kaputt
+    100018: Gel_Treppe
+    100020: gW2_Treppe_001
     400000: Gel_Anfang
     400002: Gel_Ku_aussen
     400004: Gel_Ku_innen
@@ -19,6 +22,9 @@ ModelImporter:
     400010: Gel_Ku_innen_001
     400012: Gel_Mitte_001
     400014: gW2_Treppe
+    400016: Gel_Kaputt
+    400018: Gel_Treppe
+    400020: gW2_Treppe_001
     2300000: Gel_Anfang
     2300002: Gel_Ku_aussen
     2300004: Gel_Ku_innen
@@ -26,6 +32,9 @@ ModelImporter:
     2300008: Gel_Ku_innen_001
     2300010: Gel_Mitte_001
     2300012: gW2_Treppe
+    2300014: Gel_Kaputt
+    2300016: Gel_Treppe
+    2300018: gW2_Treppe_001
     3300000: Gel_Anfang
     3300002: Gel_Ku_aussen
     3300004: Gel_Ku_innen
@@ -33,6 +42,9 @@ ModelImporter:
     3300008: Gel_Ku_innen_001
     3300010: Gel_Mitte_001
     3300012: gW2_Treppe
+    3300014: Gel_Kaputt
+    3300016: Gel_Treppe
+    3300018: gW2_Treppe_001
     4300000: Gel_Ku_aussen
     4300002: Gel_Ku_innen
     4300004: Gel_Mitte
@@ -40,6 +52,9 @@ ModelImporter:
     4300008: Gel_Mitte_001
     4300010: Gel_Ku_innen_001
     4300012: gW2_Treppe
+    4300014: Gel_Kaputt
+    4300016: gW2_Treppe_001
+    4300018: Gel_Treppe
     7400000: Default Take
     9500000: //RootNode
   materials:
