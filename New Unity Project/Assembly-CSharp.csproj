@@ -50,11 +50,13 @@
      <Compile Include="Assets\Scripts\FauxGravity\AnimationDirection.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\DirectionIndicatorScript.cs" />
+     <Compile Include="Assets\Scripts\FauxGravity\DoorTeleporter.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\EnemyAwareness.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\FauxGravityAttractor.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\FauxGravityBody.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\Menu.cs" />
+     <Compile Include="Assets\Scripts\FauxGravity\ObjectTeleport.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\PlayerControllerFauxGravity.cs" />
      <Compile Include="Assets\Scripts\MenuIntro.cs" />
   </ItemGroup>

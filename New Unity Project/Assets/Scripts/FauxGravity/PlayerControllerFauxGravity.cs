@@ -10,10 +10,9 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 	public static bool isGrounded; //ob das Objekt den Boden berührt
 
 	//Das ganze Junping sollte noch überarbeitet werden, wenn zeit besteht
-
-	private bool doubleJump = false;
+	
 	private bool jump = false;
-	private float jumpPower = 200;
+	public float jumpPower;
 	public static bool jumping = false;
 	public static bool walking = false;
 	private Vector3 groundLevel;
@@ -71,21 +70,15 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 
 		//********************************************************************************************* Jump update (input):
 
-
-//		if (isGrounded)
-//		{
-//			doubleJump = false;
-//		}
-//		
-//		if (Input.GetButtonDown("Jump"))
-//		{
-//			if (isGrounded || doubleJump)
-//			{
-//				doubleJump = !doubleJump;
-//				jump = true;
-//				groundLevel = myTransform.position;
-//			}
-//		}
+		
+		if (Input.GetButtonDown("Jump"))
+		{
+			if (isGrounded)
+			{
+				jump = true;
+				groundLevel = myTransform.position;
+			}
+		}
 
 	}
 
@@ -98,30 +91,32 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		else
 		{
 			// aus: https://www.youtube.com/watch?v=gHeQ8Hr92P4)
-			rigidbody.MovePosition(myTransform.position + transform.TransformDirection(moveDirection)*moveSpeed*Time.deltaTime); //problem mit local moveDirection (drehen) anscheinend nicht mit local moveDirection sondern mit dem Attractor ein problem
+			rigidbody.MovePosition(myTransform.position + transform.TransformDirection(moveDirection)*moveSpeed*Time.deltaTime); //problem mit local moveDirection (drehen) anscheinend nicht mit local moveDirection sondern mit dem Attractor ein problem EDIT: wut?
 		}
 
-		if (jump && myTransform.rigidbody.velocity.magnitude <= 10)
+		//if (jump && myTransform.rigidbody.velocity.magnitude <= 10)
+		if (jump)
 		{
 			rigidbody.AddForce(myTransform.position.normalized * jumpPower );
-			//jumping = true;
-			//jump = false;
+			jumping = true;
 			//StartCoroutine(JumpTimer());
 			if (groundLevel.magnitude + jumpHeight <= myTransform.position.magnitude)
-			{
+				jump = true;
+			else
 				jump = false;
-			}
 		}
+		else if (jumping && isGrounded)
+			jumping = false;
 
 	}
-
 	/*
 	IEnumerator JumpTimer()
 	{
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (2);
 		jump = false;
 	}
 	*/
+	
 	Vector3 returnMoveDirection()
 	{
 		return moveDirection;
