@@ -8,14 +8,10 @@ public class ObjectTeleport : MonoBehaviour {
 	void Start () {
 		myTransform = transform;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	void Teleport(Vector3 newPos)
 	{
 		myTransform.position = newPos;
+		//eventuell noch rotation des Charakters anpassen, dass er "aus" der Türe kommt.
 	}
 }

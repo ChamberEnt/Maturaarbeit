@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\FauxGravity\AnimationController.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\AnimationDirection.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\FauxGravity\DeathSphere.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\DirectionIndicatorScript.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\DoorTeleporter.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\EnemyAwareness.cs" />
@@ -58,6 +59,7 @@
      <Compile Include="Assets\Scripts\FauxGravity\Menu.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\ObjectTeleport.cs" />
      <Compile Include="Assets\Scripts\FauxGravity\PlayerControllerFauxGravity.cs" />
+     <Compile Include="Assets\Scripts\MenuGameOver.cs" />
      <Compile Include="Assets\Scripts\MenuIntro.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

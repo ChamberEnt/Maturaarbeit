@@ -11,16 +11,16 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 
 	//Das ganze Junping sollte noch überarbeitet werden, wenn zeit besteht
 	
-	private bool jump = false;
+	private bool jump;
 	public float jumpPower;
 	public static bool jumping = false;
 	public static bool walking = false;
 	private Vector3 groundLevel;
-	public float jumpHeight;
 	//private static bool run;
 
 	void Start () {
 		myTransform = transform;
+		jump = false;
 	}
 
 
@@ -79,7 +79,6 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 				groundLevel = myTransform.position;
 			}
 		}
-
 	}
 
 	void FixedUpdate() {
@@ -99,28 +98,37 @@ public class PlayerControllerFauxGravity : MonoBehaviour {
 		{
 			rigidbody.AddForce(myTransform.position.normalized * jumpPower );
 			jumping = true;
-			//StartCoroutine(JumpTimer());
-			if (groundLevel.magnitude + jumpHeight <= myTransform.position.magnitude)
-				jump = true;
-			else
-				jump = false;
+			StartCoroutine(JumpTimer());
+			jump = false;
 		}
-		else if (jumping && isGrounded)
-			jumping = false;
+//		else if (jumping && isGrounded)
+//		{
+//			jumping = false;
+//		}
+		//Debug.Log ("jumping: "+jumping);
 
 	}
-	/*
+
 	IEnumerator JumpTimer()
 	{
-		yield return new WaitForSeconds (2);
-		jump = false;
+		yield return new WaitForSeconds (0.25f);
+		jumping = false;
 	}
-	*/
+
+	void GameOver()
+	{
+		Application.LoadLevel(2);
+	}
 	
-	Vector3 returnMoveDirection()
+	public Vector3 returnMoveDirection()
 	{
 		return moveDirection;
 	}
+	public static bool returnJumping()
+	{
+		return jumping;
+	}
+	
 	/*
 	public static bool returnRun()
 	{

@@ -18,6 +18,7 @@ public class DoorTeleporter : MonoBehaviour {
 		if (other.gameObject.tag == "Player")
 		{
 			other.gameObject.SendMessage("Teleport", newPos, SendMessageOptions.DontRequireReceiver);
+			//eventuell noch rotation des Charakters anpassen, dass er "aus" der Türe kommt.
 		}
 	}
 }
